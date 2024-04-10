@@ -22,6 +22,8 @@ const btnCartS = document.getElementById("_btnCartS");
 const btnCartIconS = document.getElementById("_btnCartIconS");
 
 const wrapper = document.querySelector(".wrapper");
+
+const formGroup = document.querySelector("#_form-group");
 //BURGER ICON CHANGE
 burgerButton.addEventListener("click", () => {
   if (burgerIcon.classList.contains("fa-bars")) {
@@ -67,8 +69,9 @@ changeSmall.addEventListener("click", () => {
     navColor.classList.add("navbar-dark");
 
     //BODY BACKGROUND
-    wrapper.style.background = "#1F2327";
+    wrapper.style.background = "var(--dark)";
     wrapper.style.color = "white";
+    formGroup.style.border = "1px solid var(--ivory)";
     //TEXT COLOR
     txtTheme.forEach((c) => (c.style.color = "#fff"));
 
@@ -94,9 +97,9 @@ changeSmall.addEventListener("click", () => {
     navColor.classList.add("navbar-light");
 
     // BODY BACKGROUND
-    wrapper.style.background = "#fffff0";
+    wrapper.style.background = "var(--ivory)";
     wrapper.style.color = "black";
-
+    formGroup.style.border = "1px solid var(--dark)";
     //TEXT COLOR
     txtTheme.forEach((c) => (c.style.color = "#000"));
 
@@ -126,8 +129,9 @@ changeLarge.addEventListener("click", () => {
     navColor.classList.add("navbar-dark");
 
     //BODY BACKGROUND
-    wrapper.style.background = "#1F2327";
+    wrapper.style.background = "var(--dark)";
     wrapper.style.color = "white";
+    formGroup.style.border = "1px solid var(--ivory)";
     //TEXT COLOR
     txtTheme.forEach((c) => (c.style.color = "#fff"));
 
@@ -153,8 +157,9 @@ changeLarge.addEventListener("click", () => {
     navColor.classList.add("navbar-light");
 
     // BODY BACKGROUND
-    wrapper.style.background = "#fffff0";
+    wrapper.style.background = "var(--ivory)";
     wrapper.style.color = "black";
+    formGroup.style.border = "1px solid var(--dark)";
 
     //TEXT COLOR
     txtTheme.forEach((c) => (c.style.color = "#000"));
@@ -179,7 +184,7 @@ window.addEventListener("load", () => {
     navColor.style.background = "var(--ivory)";
     navColor.classList.remove("navbar-dark");
     navColor.classList.add("navbar-light");
-    wrapper.style.background = "#fffff0";
+    wrapper.style.background = "var(--ivory)";
     wrapper.style.color = "black";
     txtTheme.forEach((c) => (c.style.color = "#000"));
   }

@@ -5,11 +5,114 @@
   box-sizing: border-box;
   transition: all 300ms ease;
   font-family: "Poppins", sans-serif;
-  --ivory: #fffff0;
+  --ivory: #f8f9fa;
+  --dark: #212529;
+  --yellow: #e29d35;
 }
 
 .wrapper {
   width: 100%;
   min-height: 100vh;
   background: var(--ivory);
+  padding: 3.75rem 0 3.75rem 0;
+
+  h1 {
+    padding: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    width: 100%;
+  }
+}
+
+.patient-infos {
+  margin-top: 6px;
+  width: 100%;
+  padding: 20px;
+}
+
+.form-group {
+  width: 100%;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid var(--dark);
+  border-radius: 12px;
+}
+.primary,
+.secondary {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  place-items: center;
+  padding: 20px 0 20px 0;
+  .fName,
+  .lName,
+  .mName,
+  .gender,
+  .age,
+  .cardioCon {
+    width: 100%;
+    max-width: 300px;
+  }
+  label {
+    padding: 10px 5px 10px 5px;
+    font-size: 18px;
+  }
+  input[type="number"] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+    /* Add this line to make the input full width */
+  }
+}
+.secondary {
+  textarea {
+    resize: none;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.btn-grp {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  .btn-submit {
+    padding: 10px 20px 10px 20px;
+    border-radius: 12px;
+    background: green;
+    color: var(--ivory);
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid var(--dark);
+
+    &:hover {
+      filter: brightness(1.2);
+    }
+  }
+  .btn-edit {
+    padding: 10px 20px 10px 20px;
+    border-radius: 12px;
+    background: #007bff;
+    color: var(--ivory);
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid var(--dark);
+    &:hover {
+      filter: brightness(1.2);
+    }
+  }
 }
