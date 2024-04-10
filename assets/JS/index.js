@@ -1,3 +1,9 @@
+const openAsses = document.getElementById("_assessment");
+
+openAsses.addEventListener("click", () => {
+  window.open("./Pages/assessment.html");
+});
+
 const submitBtn = document.getElementById("submit");
 const editBtn = document.getElementById("edit");
 submitBtn.addEventListener("click", function (event) {

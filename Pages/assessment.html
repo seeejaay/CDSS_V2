@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assessment | CDSS</title>
+
+    <link rel="stylesheet" href="../assets/Style/header.css" />
+    <link rel="stylesheet" href="../assets/Style/assessment.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="w-100">
+      <nav class="navbar navbar-expand-lg shadow p-2 w-100" id="_navColor">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <h6 class="txt-theme txt-size">Clinical Decision Support System</h6>
+          </a>
+          <div class="d-flex">
+            <button
+              class="navbar-toggler"
+              id="burgerButton"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fas fa-bars hamburger" id="_hamburger"></i>
+            </button>
+
+            <button id="_changeThemeConS" type="button" class="btn i-pos">
+              <i class="fas fa-moon fa" id="_changeThemeS"></i>
+            </button>
+          </div>
+
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link x" aria-current="page" id="_patientData"
+                  >Patient Data</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" id="_assessment">Assessment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="_diagnosis">Diagnosis</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="_planning">Planning</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="_evaluation">Evaluation</a>
+              </li>
+              <li class="nav-item">
+                <button id="_changeThemeConL" type="button" class="btn i-pos">
+                  <i class="fas fa-moon fa" id="_changeThemeL"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="wrapper">
+      <h1 class="txt-theme">Assessment</h1>
+      <section class="questions">
+        <form>
+          <div class="btn-grp">
+            <button id="_submit" class="btn-submit">Submit</button>
+            <button id="_edit" class="btn-edit">Edit</button>
+          </div>
+          <div class="question-answer">
+            <h5 class="txt-theme">Problem Identification</h5>
+
+            <select class="form-control" id="probIden" name="probIden">
+              <option value="">-Select-</option>
+              <option value="type2D">Type 2 Diabetes</option>
+              <option value="HypTen">
+                Hypetension (High Blood Cholesterol)
+              </option>
+              <option value="HypeLipid">
+                Hyperlipidemia (High Cholesterol)
+              </option>
+              <option value="coronAD">Coronary Heart Disease</option>
+              <option value="Asth">Asthma</option>
+              <option value="ChronOBP">
+                Chronic Obstructive Pulmonary Disease
+              </option>
+              <option value="GasReflux">Gastroesophageal Reflux Disease</option>
+              <option value="depress">Depression</option>
+              <option value="Anx">Anxiety</option>
+              <option value="Obese">Obesity</option>
+              <option value="osteo">Osteoarthritis</option>
+              <option value="ChronKD">Chronic Kidney Disease</option>
+              <option value="UrinTI">Urinary Track infection</option>
+              <option value="ChronP">Chronic Pain</option>
+              <option value="MigH">Migraine Headaches</option>
+            </select>
+          </div>
+          <div class="question-answer">
+            <h5 class="txt-theme">
+              1. Are you experiencing any symptoms such as increased thirst,
+              frequent urination, or unexplained weight loss?
+            </h5>
+            <div class="choices">
+              <label class="txt-theme">
+                <input type="radio" name="question1" value="option1" />
+                Yes, Frequently
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question1" value="option2" />
+                Occassionally
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question1" value="option3" />
+                Rarely
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question1" value="option4" />
+                Never
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question1" value="option5" />
+                Unsure
+              </label>
+            </div>
+          </div>
+
+          <div class="question-answer">
+            <h5 class="txt-theme">
+              2. When was the last time you had your HbA1c levels checked?
+            </h5>
+            <div class="choices">
+              <label class="txt-theme">
+                <input type="radio" name="question2" value="option1" />
+                Witin the last 3 months
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question2" value="option2" />
+                3-6 months ago
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question2" value="option3" />
+                6-12 months ago
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question2" value="option4" />
+                More than 12 months ago
+              </label>
+            </div>
+          </div>
+
+          <div class="question-answer">
+            <h5 class="txt-theme">
+              3. Have you noticed any changes in your blood sugar levels over
+              the past few months?
+            </h5>
+            <div class="choices">
+              <label class="txt-theme">
+                <input type="radio" name="question3" value="option1" />
+                Yes, they have been consitently higher
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question3" value="option2" />
+                Yes, they have been consitently lower
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question3" value="option3" />
+                No, the have remained stable
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question3" value="option4" />
+                I haven't been monitoring my blood sugar levels
+              </label>
+              <label class="txt-theme"
+                ><input type="radio" name="question3" value="option5" />
+                I'm not sure
+              </label>
+            </div>
+          </div>
+
+          <div class="question-answer">
+            <h5 class="txt-theme">
+              4. Do you often feel fatigued or excessively tired?
+            </h5>
+            <div class="choices">
+              <label class="txt-theme">
+                <input type="radio" name="question4" value="option1" />
+                Yes
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question4" value="option2" />
+                No
+              </label>
+            </div>
+          </div>
+
+          <div class="question-answer">
+            <h5 class="txt-theme">
+              5. Frequency of engagement in physical activity
+            </h5>
+            <div class="choices">
+              <label class="txt-theme">
+                <input type="radio" name="question5" value="option1" />
+                At least 150 minutes per week
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question5" value="option2" />
+                Less than 150 minutes per week
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question5" value="option3" />
+                Rarely
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question5" value="option4" />
+                Never</label
+              >
+            </div>
+          </div>
+
+          <div class="question-answer">
+            <h5 class="txt-theme">
+              6. Are you experiencing any numbness or tingling in your hands or
+              feet?
+            </h5>
+            <div class="choices">
+              <label class="txt-theme">
+                <input type="radio" name="question6" value="option1" />
+                Yes</label
+              >
+              <label class="txt-theme">
+                <input type="radio" name="question6" value="option2" />
+                No</label
+              >
+            </div>
+          </div>
+
+          <div class="question-answer">
+            <h5 class="txt-theme">
+              7. Have you had any blurry vision or changes in vision clarity?
+            </h5>
+            <div class="choices">
+              <label class="txt-theme">
+                <input type="radio" name="question7" value="option1" />
+                Yes
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question7" value="option2" />
+                No
+              </label>
+            </div>
+          </div>
+
+          <div class="question-answer">
+            <h5 class="txt-theme">
+              8. Do you experience frequent infections or slow wound healing?
+            </h5>
+            <div class="choices">
+              <label class="txt-theme">
+                <input type="radio" name="question8" value="option1" />
+                Yes
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question8" value="option2" />
+                No
+              </label>
+            </div>
+          </div>
+
+          <div class="question-answer">
+            <h5 class="txt-theme">
+              9. Have you noticed any unusual changes in your appetite?
+            </h5>
+            <div class="choices">
+              <label class="txt-theme">
+                <input type="radio" name="question9" value="option1" />
+                Yes, increased appetite
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question9" value="option2" />
+                Yes, decreased appetite
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question9" value="option3" />
+                No
+              </label>
+            </div>
+          </div>
+
+          <div class="question-answer">
+            <h5 class="txt-theme">
+              10. Are you experiencing any persistent headaches of dizziness?
+            </h5>
+            <div class="choices">
+              <label class="txt-theme">
+                <input type="radio" name="question10" value="option1" />
+                Yes
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question10" value="option2" />
+                No
+              </label>
+            </div>
+          </div>
+          <div class="question-answer">
+            <h5 class="txt-theme">
+              11. Have you had any recent episodes of confusion or difficulty
+              concentrating?
+            </h5>
+            <div class="choices">
+              <label class="txt-theme">
+                <input type="radio" name="question11" value="option1" />
+                Yes
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question11" value="option2" />
+                No
+              </label>
+            </div>
+          </div>
+
+          <div class="question-answer">
+            <h5 class="txt-theme">12. Last recorded HbA1c level</h5>
+            <div class="choices">
+              <label class="txt-theme">
+                <input type="radio" name="question12" value="option1" />
+                Below 7%
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question12" value="option2" />
+                Between 7% and 8%
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question12" value="option3" />
+                Betweem 8% and 9%
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question10" value="option4" />
+                Above 9%
+              </label>
+            </div>
+          </div>
+
+          <div class="question-answer">
+            <h5 class="txt-theme">13. Hemoglobin A1c (HbA1c) levels</h5>
+            <div class="choices">
+              <label class="txt-theme">
+                <input type="radio" name="question13" value="option1" />
+                Elevated (indicating poor glycemic control)
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question13" value="option2" />
+                Within the target range
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question13" value="option3" />
+                Not available
+              </label>
+            </div>
+          </div>
+
+          <div class="question-answer">
+            <h5 class="txt-theme">14. Urine Microalbumin levels</h5>
+            <div class="choices">
+              <label class="txt-theme">
+                <input type="radio" name="question14" value="option1" />
+                Elevated (indicating kidney damage)
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question14" value="option2" />
+                Within normal range
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question14" value="option3" />
+                Not available
+              </label>
+            </div>
+          </div>
+
+          <div class="question-answer">
+            <h5 class="txt-theme">15. Lipid profile (Cholesterol)</h5>
+            <div class="choices">
+              <label class="txt-theme">
+                <input type="checkbox" name="question15" value="option1" />
+                Elevated LDL cholesterol
+              </label>
+              <label class="txt-theme">
+                <input type="checkbox" name="question15" value="option2" />
+                Low HDL cholesterol
+              </label>
+              <label class="txt-theme">
+                <input type="checkbox" name="question15" value="option3" />
+                High total cholesterol
+              </label>
+              <label class="txt-theme">
+                <input type="checkbox" name="question15" value="option4" />
+                Normal lipid profile
+              </label>
+              <label class="txt-theme"
+                ><input type="checkbox" name="question15" value="option5" />
+                Not available
+              </label>
+            </div>
+          </div>
+
+          <div class="question-answer">
+            <h5 class="txt-theme">16. Comprehensive Metabolic Panel (CMP)</h5>
+            <div class="choices">
+              <label class="txt-theme">
+                <input type="checkbox" name="question16" value="option1" />
+                Elevated fasting blood glucose
+              </label>
+              <label class="txt-theme">
+                <input type="checkbox" name="question16" value="option2" />
+                Abnormal kidney function markers (e.g., elevated creatinine,
+                BUN)
+              </label>
+              <label class="txt-theme">
+                <input type="checkbox" name="question16" value="option3" />
+                Abnormal liver function markers (e.g., eelevated ALT, AST)
+              </label>
+              <label class="txt-theme">
+                <input type="checkbox" name="question16" value="option4" />
+                Electrolyt Imbalances (e.g., hyperkalemia, hyponatremia)
+              </label>
+              <label class="txt-theme"
+                ><input type="checkbox" name="question16" value="option5" />
+                Normal results
+              </label>
+              <label class="txt-theme"
+                ><input type="checkbox" name="question16" value="option6" /> Not
+                available</label
+              >
+            </div>
+          </div>
+
+          <div class="question-answer">
+            <h5 class="txt-theme">17. Complete Blood count (CBC)</h5>
+            <div class="choices">
+              <label class="txt-theme">
+                <input type="checkbox" name="question17" value="option1" />
+                Anemia (e.g.,low hemoglobin, low hematocrit)
+              </label>
+              <label class="txt-theme">
+                <input type="checkbox" name="question17" value="option2" />
+                Elevated white blood cell count (indicating infection of
+                inflammation)
+              </label>
+              <label class="txt-theme">
+                <input type="checkbox" name="question17" value="option3" />
+                Abnormal platelet count
+              </label>
+              <label class="txt-theme">
+                <input type="checkbox" name="question17" value="option4" />
+                Normal CBC
+              </label>
+              <label class="txt-theme"
+                ><input type="checkbox" name="question17" value="option5" />
+                Not availeble
+              </label>
+            </div>
+          </div>
+
+          <div class="question-answer">
+            <h5 class="txt-theme">18. Thyroid function tests</h5>
+            <div class="choices">
+              <label class="txt-theme">
+                <input type="radio" name="question18" value="option1" />
+                Abnormal TSH levels (indicating thyroid dysfunction)
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question18" value="option2" />
+                Normal TSH levels
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question18" value="option3" />
+                Not available
+              </label>
+            </div>
+          </div>
+
+          <div class="question-answer">
+            <h5 class="txt-theme">19. Serum electrolytes</h5>
+            <div class="choices">
+              <label class="txt-theme">
+                <input type="radio" name="question19" value="option1" />
+                Electrolyte imblances (e.g., hyperkalemia, hyponatremia)
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question19" value="option2" />
+                Normal electrolyte levels
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question19" value="option3" />
+                Not available
+              </label>
+            </div>
+          </div>
+
+          <div class="question-answer">
+            <h5 class="txt-theme">20. Vitamin D levels</h5>
+            <div class="choices">
+              <label class="txt-theme">
+                <input type="radio" name="question20" value="option1" />
+                Vitamin D deficiency
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question20" value="option2" />
+                Normal Vitamin D levels
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question20" value="option3" />
+                Not available
+              </label>
+            </div>
+          </div>
+          <section class="blood-pressure">
+            <h3 class="txt-theme">Vital Signs</h3>
+            <h4 class="txt-theme">Blood Pressure</h4>
+            <div class="systolic">
+              <h5 class="txt-theme">Systolic</h5>
+              <label class="txt-theme">
+                <input
+                  type="number"
+                  name="systolic"
+                  placeholder="120"
+                  min="1"
+                  id="_systolic"
+                />
+              </label>
+            </div>
+            <div class="diastolic">
+              <h5 class="txt-theme">Diastolic</h5>
+              <label class="txt-theme"
+                ><input
+                  type="number"
+                  name="diastolic"
+                  placeholder="80"
+                  min="1"
+                  id="_diastolic"
+              /></label>
+            </div>
+            <div class="pulse">
+              <h5 class="txt-theme">Heart Rate (Pulse)</h5>
+              <label class="txt-theme"
+                ><input
+                  type="number"
+                  name="pulse"
+                  placeholder="70"
+                  min="1"
+                  id="_pulse"
+              /></label>
+            </div>
+            <div class="resprate">
+              <h5 class="txt-theme">Respiratory Rate</h5>
+              <label class="txt-theme"
+                ><input
+                  type="number"
+                  name="respiratory"
+                  placeholder="16"
+                  min="1"
+                  id="_respRate"
+              /></label>
+            </div>
+            <div class="temp">
+              <h5 class="txt-theme">Temperature</h5>
+              <label class="txt-theme"
+                ><input
+                  type="number"
+                  name="temp"
+                  placeholder="37.5"
+                  min="1"
+                  id="_temp"
+              /></label>
+            </div>
+
+            <div class="oxygen">
+              <h5 class="txt-theme">Oxygen Saturation</h5>
+              <label class="txt-theme"
+                ><input
+                  type="number"
+                  name="saturation"
+                  placeholder="99"
+                  min="1"
+                  id="_oxygenSat"
+              /></label>
+            </div>
+          </section>
+
+          <!-- Add more questions here -->
+        </form>
+      </section>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../assets/JS/assessment.js"></script>
+    <script src="../assets/JS/darkmode-other.js"></script>
+  </body>
+</html>
