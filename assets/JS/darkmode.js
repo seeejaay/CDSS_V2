@@ -62,8 +62,7 @@ changeSmall.addEventListener("click", () => {
       : "rotate(0deg)";
 
     //NAVBAR
-    navColor.classList.remove("bg-light");
-    navColor.classList.add("bg-dark");
+    navColor.style.background = "var(--dark)";
     navColor.classList.remove("navbar-light");
     navColor.classList.add("navbar-dark");
 
@@ -89,8 +88,8 @@ changeSmall.addEventListener("click", () => {
       : "rotate(0deg)";
 
     //NAVBAR
-    navColor.classList.remove("bg-dark");
-    navColor.classList.add("bg-light");
+    navColor.style.background = "var(--ivory)";
+
     navColor.classList.remove("navbar-dark");
     navColor.classList.add("navbar-light");
 
@@ -121,8 +120,8 @@ changeLarge.addEventListener("click", () => {
       : "rotate(0deg)";
 
     //NAVBAR
-    navColor.classList.remove("bg-light");
-    navColor.classList.add("bg-dark");
+
+    navColor.style.background = "var(--dark)";
     navColor.classList.remove("navbar-light");
     navColor.classList.add("navbar-dark");
 
@@ -148,8 +147,8 @@ changeLarge.addEventListener("click", () => {
       : "rotate(0deg)";
 
     //NAVBAR
-    navColor.classList.remove("bg-dark");
-    navColor.classList.add("bg-light");
+    navColor.style.background = "var(--ivory)";
+
     navColor.classList.remove("navbar-dark");
     navColor.classList.add("navbar-light");
 
@@ -177,8 +176,7 @@ window.addEventListener("load", () => {
     changeThemeS.classList.add("fa-moon");
     changeThemeL.classList.remove("fa-sun");
     changeThemeL.classList.add("fa-moon");
-    navColor.classList.remove("bg-dark");
-    navColor.classList.add("bg-light");
+    navColor.style.background = "var(--ivory)";
     navColor.classList.remove("navbar-dark");
     navColor.classList.add("navbar-light");
     wrapper.style.background = "#fffff0";
