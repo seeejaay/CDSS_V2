@@ -4,6 +4,10 @@ openPat.addEventListener("click", () => {
   window.open("../index.html", "_self");
 });
 
+const openDiag = document.getElementById("_diagnosis");
+openDiag.addEventListener("click", () => {
+  window.open("./diagnosis.html", "_self");
+});
 // Select the form and the edit button
 const form = document.querySelector("form");
 const editButton = document.querySelector("#_edit");

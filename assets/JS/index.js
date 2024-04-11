@@ -4,6 +4,12 @@ openAsses.addEventListener("click", () => {
   window.open("./Pages/assessment.html", "_self");
 });
 
+const openDiag = document.getElementById("_diagnosis");
+
+openDiag.addEventListener("click", () => {
+  window.open("./Pages/diagnosis.html", "_self");
+});
+
 const submitBtn = document.getElementById("submit");
 const editBtn = document.getElementById("edit");
 submitBtn.addEventListener("click", function (event) {
