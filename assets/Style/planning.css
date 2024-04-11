@@ -28,23 +28,40 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: start;
-}
-
-.suggestion {
-  width: 100%;
-  display: flex;
-  max-width: 1200px;
-  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 1.25rem;
+  flex-direction: column;
+}
+.primary,
+.secondary {
+  width: 100%;
+  max-width: 1300px;
+  text-align: left;
+}
+.label {
+  cursor: pointer;
+  padding: 15px;
+}
+.plan {
+  height: 0;
+  overflow: hidden;
+  transition: max-height 300ms ease;
 
-  ol li {
-    padding: 30px;
-    font-size: clamp(14px, 3vw, 20px);
+  &.active {
+    height: fit-content;
   }
-  ul li {
-    padding: 5px;
+}
+.btn-open {
+  background: var(--yellow);
+  width: 40px;
+  padding: 3px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 18px;
+  color: var(--ivory);
+  &:hover {
+    filter: brightness(1.2);
   }
+}
+.list {
+  padding: 10px;
 }

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planning | CDSS</title>
+    <link rel="stylesheet" href="../assets/Style/header.css" />
+    <link rel="stylesheet" href="../assets/Style/planning.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="w-100">
+      <nav class="navbar navbar-expand-lg shadow p-2 w-100" id="_navColor">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <h6 class="txt-theme txt-size">Clinical Decision Support System</h6>
+          </a>
+          <div class="d-flex">
+            <button
+              class="navbar-toggler"
+              id="burgerButton"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fas fa-bars hamburger" id="_hamburger"></i>
+            </button>
+
+            <button id="_changeThemeConS" type="button" class="btn i-pos">
+              <i class="fas fa-moon fa" id="_changeThemeS"></i>
+            </button>
+          </div>
+
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" id="_patientData"
+                  >Patient Data</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="_assessment">Assessment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="_diagnosis">Diagnosis</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" id="_planning">Planning</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="_evaluation">Evaluation</a>
+              </li>
+              <li class="nav-item">
+                <button id="_changeThemeConL" type="button" class="btn i-pos">
+                  <i class="fas fa-moon fa" id="_changeThemeL"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="wrapper">
+      <h1 class="txt-theme">Planning</h1>
+      <section class="inner-wrapper">
+        <div class="primary">
+          <h5 class="txt-theme">Short Term Goals</h5>
+          <ol>
+            <li class="txt-theme label">
+              For developing tailored educational materials and reminders for
+              medication adherence:
+              <button class="btn-open fas fa-plus" id="_label1"></button>
+
+              <ul class="plan" id="_plan1">
+                <li class="txt-theme list">
+                  Collaborate with healthcare providers, educators, and patients
+                  to identify specific educational needs and preferences.
+                </li>
+                <li class="txt-theme list">
+                  Utilize digital platforms or apps to create personalized
+                  educational materials and reminders based on patient
+                  preferences and health literacy levels.
+                </li>
+                <li class="txt-theme list">
+                  Provide easy access to resources through online portals,
+                  mobile apps, or printed materials.
+                </li>
+                <li class="txt-theme list">
+                  Implement feedback mechanisms to continuously improve the
+                  effectiveness of educational materials and reminders.
+                </li>
+              </ul>
+            </li>
+            <li class="txt-theme label">
+              To implement regular screening and monitoring for diabetes-related
+              complications:
+              <button class="btn-open fas fa-plus" id="_label2"></button>
+              <ul class="plan" id="_plan2">
+                <li class="txt-theme list">
+                  Develop standardized protocols based on evidence-based
+                  guidelines for screening and monitoring various complications
+                  associated with diabetes
+                </li>
+                <li class="txt-theme list">
+                  Utilize electronic health records (EHR) or clinical decision
+                  support systems (CDSS) to automate reminders for screening
+                  appointments and tests.
+                </li>
+                <li class="txt-theme list">
+                  Coordinate care between healthcare providers to ensure timely
+                  follow-up and appropriate management of identified
+                  complications.
+                </li>
+                <li class="txt-theme list">
+                  Educate patients about the importance of regular screenings
+                  and empower them to take an active role in their healthcare
+                  management.
+                </li>
+              </ul>
+            </li>
+            <li class="txt-theme label">
+              For initiating a structured diabetes education program tailored to
+              patient learning needs
+              <button class="btn-open fas fa-plus" id="_label3"></button>
+              <ul class="plan" id="_plan3">
+                <li class="txt-theme list">
+                  Assess each patient's learning preferences, health literacy
+                  level, cultural background, and language proficiency to tailor
+                  the education program accordingly.
+                </li>
+                <li class="txt-theme list">
+                  Offer a variety of educational formats such as individual
+                  counseling sessions, group classes, online modules, or
+                  multimedia resources to accommodate diverse learning styles.
+                </li>
+                <li class="txt-theme list">
+                  Provide access to certified diabetes educators or support
+                  groups who can address specific concerns and provide ongoing
+                  guidance.
+                </li>
+                <li class="txt-theme list">
+                  Monitor patient progress and adjust the education program as
+                  needed to ensure comprehension and retention of essential
+                  information.
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+        <div class="secondary">
+          <h5 class="txt-theme">Long Term Goals</h5>
+          <ol>
+            <li class="txt-theme label">
+              Establish sustainable systems for ongoing patient education and
+              support:
+
+              <button class="btn-open fas fa-plus" id="_label4"></button>
+
+              <ul class="plan" id="_plan4">
+                <li class="txt-theme list">
+                  Secure funding and resources to maintain educational programs
+                  and support services over time.
+                </li>
+                <li class="txt-theme list">
+                  Foster partnerships with community organizations, advocacy
+                  groups, and healthcare stakeholders to expand reach and
+                  sustainability.
+                </li>
+                <li class="txt-theme list">
+                  Evaluate the effectiveness of education and support
+                  initiatives through outcome measures and patient feedback,
+                  making adjustments as necessary.
+                </li>
+              </ul>
+            </li>
+            <li class="txt-theme label">
+              Institutionalize regular screening and monitoring protocols for
+              diabetes-related complications:
+
+              <button class="btn-open fas fa-plus" id="_label5"></button>
+              <ul class="plan" id="_plan5">
+                <li class="txt-theme list">
+                  Integrate screening and monitoring protocols into routine
+                  clinical practice guidelines and workflows.
+                </li>
+                <li class="txt-theme list">
+                  Provide training and education to healthcare providers on the
+                  importance of regular screenings and adherence to protocols.
+                </li>
+                <li class="txt-theme list">
+                  Utilize quality improvement initiatives to ensure consistency
+                  and adherence to screening guidelines across healthcare
+                  settings.
+                </li>
+              </ul>
+            </li>
+            <li class="txt-theme label">
+              Integrate diabetes education programs as a standard part of
+              patient care, with continuous improvement based on feedback and
+              outcomes:
+              <button class="btn-open fas fa-plus" id="_label6"></button>
+              <ul class="plan" id="_plan6">
+                <li class="txt-theme list">
+                  Embed diabetes education programs into the standard care
+                  pathways for patients diagnosed with diabetes.
+                </li>
+                <li class="txt-theme list">
+                  Incorporate patient feedback and outcomes data into program
+                  evaluation and quality improvement efforts.
+                </li>
+                <li class="txt-theme list">
+                  Continuously update educational materials and curriculum based
+                  on emerging research, best practices, and patient needs.
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../assets/JS/darkmode-other.js"></script>
+    <script src="../assets/JS/planning.js"></script>
+  </body>
+</html>

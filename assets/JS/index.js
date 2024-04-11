@@ -10,6 +10,12 @@ openDiag.addEventListener("click", () => {
   window.open("./Pages/diagnosis.html", "_self");
 });
 
+const openPlan = document.getElementById("_planning");
+
+openPlan.addEventListener("click", () => {
+  window.open("./Pages/planning.html", "_self");
+});
+
 const submitBtn = document.getElementById("submit");
 const editBtn = document.getElementById("edit");
 submitBtn.addEventListener("click", function (event) {

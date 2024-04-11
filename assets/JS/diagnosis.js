@@ -10,6 +10,11 @@ openPat.addEventListener("click", () => {
   window.open("../index.html", "_self");
 });
 
+const openPlan = document.getElementById("_planning");
+openPlan.addEventListener("click", () => {
+  window.open("./planning.html", "_self");
+});
+
 var storedAnswers = localStorage.getItem("answers");
 storedAnswers = JSON.parse(storedAnswers);
 var keys;
@@ -40,9 +45,7 @@ if (storedAnswers) {
   console.log("No answers found");
 }
 
-console.log(keys);
 values = Object.values(storedAnswers);
-console.log(values);
 
 if (
   values[0] == "type2D" &&
@@ -89,7 +92,38 @@ if (
 ) {
   const suggestion = document.getElementById("_suggestion");
 
-  suggestion.innerHTML =
-    "<ol> <li class=txt-theme>Ineffective Glycemic Control related to medication non-adherence and lifestyle modifications.</li><li class=txt-theme> Risk for Diabetic Complications related to prolonged hyperglycemia and poor disease management.</li><li class=txt-theme>Deficient Knowledge related to diabetes self-management.</li></ol>";
+  suggestion.innerHTML = `<ol>
+      <li class="txt-theme">Ineffective Glycemic Control related to medication non-adherence and lifestyle modifications.
+        <p class="txt-theme">Short Term Goal</p>
+        <ul>
+          <li class="txt-theme">Develop tailored educational materials and reminders for medication adherence.</li>
+        </ul>
+        <p class=txt-theme>Long Term Goal</p>
+        <ul>
+        <li class=txt-theme> Establish sustainable systems for ongoing patient education and support.</li></ul>
+      </li>
+      <li class="txt-theme">Risk for Diabetic Complications related to prolonged hyperglycemia and poor disease management.
+      <p class=txt-theme>Short Term Goal</p>
+      <ul>
+        <li class=txt-theme>Implement regular screening and monitoring for diabetes-related complications.
+      </li>
+      </ul>
+      <p class=txt-theme>Long Term Goal</p>
+      <ul>
+        <li class=txt-theme>Institutionalize regular screening and monitoring protocols for diabetes-related complications.
+        </li>
+      </ul>
+      </li>
+      <li class="txt-theme">Deficient Knowledge related to diabetes self-management. 
+        <p class=txt-theme>Short Term Goal</p>
+        <ul>
+        <li class=txt-theme> Initiate a structured diabetes education program tailored to patient learning needs.</li>
+        </ul>
+        <p class=txt-theme>Long Term Goal</p>
+        <ul>
+          <li class=txt-theme>Integrate diabetes education programs as a standard part of patient care, with continuous improvement based on feedback and outcomes.</li>
+        </ul>
+      </li>
+    </ol>`;
   // Append the suggestionsDiv to the document body or any other desired element
 }

@@ -8,6 +8,13 @@ const openDiag = document.getElementById("_diagnosis");
 openDiag.addEventListener("click", () => {
   window.open("./diagnosis.html", "_self");
 });
+
+const openPlan = document.getElementById("_planning");
+
+openPlan.addEventListener("click", () => {
+  window.open("./planning.html", "_self");
+});
+
 // Select the form and the edit button
 const form = document.querySelector("form");
 const editButton = document.querySelector("#_edit");
@@ -212,7 +219,7 @@ async function checkValues() {
     respRate.style.color = "#ffffff";
   }
 
-  if (tempValue < 36.5 || tempValue > 37.3) {
+  if (tempValue < 36.5 || tempValue > 37.5) {
     temp.style.background = "#ff0000";
     temp.style.color = "#ffffff";
   } else {
