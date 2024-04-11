@@ -1,3 +1,9 @@
+const openPat = document.getElementById("_patientData");
+
+openPat.addEventListener("click", () => {
+  window.open("../index.html", "_self");
+});
+
 // Select the form and the edit button
 const form = document.querySelector("form");
 const editButton = document.querySelector("#_edit");

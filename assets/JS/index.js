@@ -1,7 +1,7 @@
 const openAsses = document.getElementById("_assessment");
 
 openAsses.addEventListener("click", () => {
-  window.open("./Pages/assessment.html");
+  window.open("./Pages/assessment.html", "_self");
 });
 
 const submitBtn = document.getElementById("submit");

@@ -71,6 +71,7 @@
   textarea {
     resize: none;
   }
+  gap: 30px;
 }
 
 input::-webkit-outer-spin-button,
