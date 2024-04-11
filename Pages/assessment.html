@@ -538,7 +538,7 @@
             <h3 class="txt-theme">Vital Signs</h3>
             <h4 class="txt-theme">Blood Pressure</h4>
             <div class="systolic">
-              <h5 class="txt-theme">Systolic</h5>
+              <h5 class="txt-theme">21. Systolic</h5>
               <label class="txt-theme">
                 <input
                   type="number"
@@ -550,7 +550,7 @@
               </label>
             </div>
             <div class="diastolic">
-              <h5 class="txt-theme">Diastolic</h5>
+              <h5 class="txt-theme">22. Diastolic</h5>
               <label class="txt-theme"
                 ><input
                   type="number"
@@ -561,7 +561,7 @@
               /></label>
             </div>
             <div class="pulse">
-              <h5 class="txt-theme">Heart Rate (Pulse)</h5>
+              <h5 class="txt-theme">23. Heart Rate (Pulse)</h5>
               <label class="txt-theme"
                 ><input
                   type="number"
@@ -572,7 +572,7 @@
               /></label>
             </div>
             <div class="resprate">
-              <h5 class="txt-theme">Respiratory Rate</h5>
+              <h5 class="txt-theme">24. Respiratory Rate</h5>
               <label class="txt-theme"
                 ><input
                   type="number"
@@ -583,7 +583,7 @@
               /></label>
             </div>
             <div class="temp">
-              <h5 class="txt-theme">Temperature</h5>
+              <h5 class="txt-theme">25. Temperature</h5>
               <label class="txt-theme"
                 ><input
                   type="number"
@@ -595,7 +595,7 @@
             </div>
 
             <div class="oxygen">
-              <h5 class="txt-theme">Oxygen Saturation</h5>
+              <h5 class="txt-theme">26. Oxygen Saturation</h5>
               <label class="txt-theme"
                 ><input
                   type="number"
@@ -607,6 +607,150 @@
             </div>
           </section>
 
+          <div class="question-answer">
+            <h5 class="txt-theme" for="hba1cleve">27. Recent HbA1c levels</h5>
+            <select name="haba1clevel" id="hba1clevel" class="form-control">
+              <option value="">-Select-</option>
+              <option value="within">Within target range (e.g., < 7%)</option>
+              <option value="elevated">Elevated (e.g.,≥ 7%)</option>
+              <option value="Unknown">Unknown</option>
+            </select>
+          </div>
+
+          <div class="question-answer">
+            <h5 class="txt-theme" for="bloodglucose">
+              28. Fasting Blood Glucose
+            </h5>
+            <select name="bloodGlucose" id="bloodglucose" class="form-control">
+              <option value="">-Select-</option>
+              <option value="within">
+                Within target range (e.g., 70-130 mg/dL)
+              </option>
+              <option value="elevated">Elevated (e.g., >130 mg/dL)</option>
+              <option value="hypo">Hypoglycemic (e.g., < 70 mg/dL)</option>
+              <option value="Unknown">Unknown</option>
+            </select>
+          </div>
+
+          <div class="question-answer">
+            <h5 class="txt-theme" for="medAdherence">
+              29. Changes in medication Adherance
+            </h5>
+            <select name="medAdherance" id="medAdherence" class="form-control">
+              <option value="">-Select-</option>
+              <option value="imrpoved">Improved adherence</option>
+              <option value="nochange">No change</option>
+              <option value="decreased">Decreased adherence</option>
+              <option value="Unknown">Unknown</option>
+            </select>
+          </div>
+
+          <div class="question-answer">
+            <h5 class="txt-theme">30. Changes in Lifestyle Modification</h5>
+            <div class="choices">
+              <label class="txt-theme">
+                <input type="radio" name="question30" value="option1" />
+                Improved adherence to diet and exercise
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question30" value="option2" />
+                No change in adherence to diet and exercise
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question30" value="option3" />
+                Decreased adherence to diet and exercise
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question30" value="option4" />
+                Unknown
+              </label>
+            </div>
+          </div>
+
+          <div class="question-answer">
+            <h5 class="txt-theme">31. Weight</h5>
+            <div class="choices">
+              <label class="txt-theme">
+                <input type="radio" name="question31" value="option1" />
+                Stable
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question31" value="option2" />
+                Increased
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question31" value="option3" />
+                Decreased
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question31" value="option4" />
+                Unknown
+              </label>
+            </div>
+          </div>
+
+          <div class="question-answer">
+            <h5 class="txt-theme">32. Prescence of Symptoms</h5>
+            <div class="choices">
+              <label class="txt-theme">
+                <input type="checkbox" name="question32" value="option1" />
+                Polyuria (excessive urination)
+              </label>
+              <label class="txt-theme">
+                <input type="checkbox" name="question32" value="option2" />
+                Polydipsia (excessive thirst)
+              </label>
+              <label class="txt-theme">
+                <input type="checkbox" name="question32" value="option3" />
+                Fatigue
+              </label>
+              <label class="txt-theme">
+                <input type="checkbox" name="question32" value="option4" />
+                Blurred vision
+              </label>
+              <label class="txt-theme"
+                ><input type="checkbox" name="question32" value="option5" />
+                Neuropathy symptoms (e.g., numbness, tingling)
+              </label>
+              <label class="txt-theme"
+                ><input type="checkbox" name="question32" value="option6" />
+                No symptoms reported
+              </label>
+              <label class="txt-theme"
+                ><input type="checkbox" name="question32" value="option7" />
+                Unknown
+              </label>
+            </div>
+          </div>
+          <div class="question-answer">
+            <h5 class="txt-theme">33. Recent Dietary Habits</h5>
+            <div class="choices">
+              <label class="txt-theme">
+                <input type="radio" name="question33" value="option1" />
+                Adherence to diabetic meal plan
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question33" value="option2" />
+                Excessive carbohydrate intake
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question33" value="option3" />
+                High-fat diet
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question33" value="option4" />
+                Balanced diet
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question33" value="option5" />
+                Poor dietary choices
+              </label>
+              <label class="txt-theme">
+                <input type="radio" name="question33" value="option6" />
+                Unknown
+              </label>
+            </div>
+          </div>
           <!-- Add more questions here -->
         </form>
       </section>

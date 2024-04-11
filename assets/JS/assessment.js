@@ -24,6 +24,9 @@ submit.addEventListener("click", function (event) {
   inputElements.forEach(function (input) {
     // If the input is checked and is a checkbox and its name already exists in the answers object,
     // append the value to the existing array. Otherwise, create a new array with the value.
+    if (input.tagName === "SELECT") {
+      answers[input.name] = input.value;
+    }
     if (input.checked && input.type === "checkbox") {
       if (answers[input.name]) {
         answers[input.name].push(input.value);
@@ -32,8 +35,6 @@ submit.addEventListener("click", function (event) {
       }
     } else if (input.checked || input.type === "number") {
       // For checked radio buttons or number inputs, just store the value
-      answers[input.name] = input.value;
-    } else if (input.tagName === "SELECT") {
       answers[input.name] = input.value;
     }
 
