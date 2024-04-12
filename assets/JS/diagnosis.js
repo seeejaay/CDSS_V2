@@ -15,6 +15,12 @@ openPlan.addEventListener("click", () => {
   window.open("./planning.html", "_self");
 });
 
+const openEval = document.getElementById("_evaluation");
+
+openEval.addEventListener("click", () => {
+  window.open("./evaluation.html", "_self");
+});
+
 var storedAnswers = localStorage.getItem("answers");
 storedAnswers = JSON.parse(storedAnswers);
 var keys;

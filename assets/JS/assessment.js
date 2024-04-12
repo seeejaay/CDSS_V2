@@ -15,6 +15,12 @@ openPlan.addEventListener("click", () => {
   window.open("./planning.html", "_self");
 });
 
+const openEval = document.getElementById("_evaluation");
+
+openEval.addEventListener("click", () => {
+  window.open("./evaluation.html", "_self");
+});
+
 // Select the form and the edit button
 const form = document.querySelector("form");
 const editButton = document.querySelector("#_edit");

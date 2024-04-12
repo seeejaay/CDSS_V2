@@ -15,7 +15,11 @@ const openPlan = document.getElementById("_planning");
 openPlan.addEventListener("click", () => {
   window.open("./Pages/planning.html", "_self");
 });
+const openEval = document.getElementById("_evaluation");
 
+openEval.addEventListener("click", () => {
+  window.open("./Pages/evaluation.html", "_self");
+});
 const submitBtn = document.getElementById("submit");
 const editBtn = document.getElementById("edit");
 submitBtn.addEventListener("click", function (event) {

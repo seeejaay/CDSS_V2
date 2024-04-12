@@ -16,6 +16,12 @@ openDiag.addEventListener("click", () => {
   window.open("./diagnosis.html", "_self");
 });
 
+const openEval = document.getElementById("_evaluation");
+
+openEval.addEventListener("click", () => {
+  window.open("./evaluation.html", "_self");
+});
+
 const label1 = document.getElementById("_label1");
 const plan1 = document.getElementById("_plan1");
 

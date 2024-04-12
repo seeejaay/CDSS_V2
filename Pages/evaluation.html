@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evaluation | CDSS</title>
+
+    <link rel="stylesheet" href="../assets/Style/header.css" />
+    <link rel="stylesheet" href="../assets/Style/evaluation.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="w-100">
+      <nav class="navbar navbar-expand-lg shadow p-2 w-100" id="_navColor">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <h6 class="txt-theme txt-size">Clinical Decision Support System</h6>
+          </a>
+          <div class="d-flex">
+            <button
+              class="navbar-toggler"
+              id="burgerButton"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fas fa-bars hamburger" id="_hamburger"></i>
+            </button>
+
+            <button id="_changeThemeConS" type="button" class="btn i-pos">
+              <i class="fas fa-moon fa" id="_changeThemeS"></i>
+            </button>
+          </div>
+
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" id="_patientData"
+                  >Patient Data</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="_assessment">Assessment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="_diagnosis">Diagnosis</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="_planning">Planning</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" id="_evaluation">Evaluation</a>
+              </li>
+              <li class="nav-item">
+                <button id="_changeThemeConL" type="button" class="btn i-pos">
+                  <i class="fas fa-moon fa" id="_changeThemeL"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="wrapper">
+      <h1 class="txt-theme">Evaluation</h1>
+      <div class="inner-wrapper">
+        <section class="short">
+          <h4 class="txt-theme">Short Term Goals</h4>
+          <ol>
+            <li class="txt-theme">
+              <span class="txt-theme"
+                >Develop tailored educational materials and reminders for
+                medication adherence.</span
+              ><br />
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Basic radio toggle button group"
+              >
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="btnradio"
+                  id="btnradio1"
+                  autocomplete="off"
+                />
+                <label class="btn btn-radio1 txt-theme" for="btnradio1"
+                  >Met</label
+                >
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="btnradio"
+                  id="btnradio2"
+                  autocomplete="off"
+                />
+                <label class="btn btn-radio2 txt-theme" for="btnradio2"
+                  >Unmet</label
+                >
+              </div>
+            </li>
+            <li class="txt-theme">
+              <span class="txt-theme">
+                Implement regular screening and monitoring for diabetes-related
+                complications</span
+              ><br />
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Basic radio toggle button group"
+              >
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="btnradio"
+                  id="btnradio1"
+                  autocomplete="off"
+                />
+                <label class="btn btn-radio3 txt-theme" for="btnradio1"
+                  >Met</label
+                >
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="btnradio"
+                  id="btnradio2"
+                  autocomplete="off"
+                />
+                <label class="btn btn-radio4 txt-theme" for="btnradio2"
+                  >Unmet</label
+                >
+              </div>
+            </li>
+            <li class="txt-theme">
+              <span class="txt-theme">
+                Initiate a structured diabetes education program tailored to
+                patient learning needs</span
+              ><br />
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Basic radio toggle button group"
+              >
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="btnradio"
+                  id="btnradio1"
+                  autocomplete="off"
+                />
+                <label class="btn btn-radio5 txt-theme" for="btnradio1"
+                  >Met</label
+                >
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="btnradio"
+                  id="btnradio2"
+                  autocomplete="off"
+                />
+                <label class="btn btn-radio6 txt-theme" for="btnradio2"
+                  >Unmet</label
+                >
+              </div>
+            </li>
+          </ol>
+        </section>
+        <section class="long">
+          <h4 class="txt-theme">Long Term Goals</h4>
+          <ol>
+            <li class="txt-theme">
+              <span class="txt-theme"
+                >Establish sustainable systems for ongoing patient education and
+                support.</span
+              ><br />
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Basic radio toggle button group"
+              >
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="btnradio"
+                  id="btnradio1"
+                  autocomplete="off"
+                />
+                <label class="btn btn-radio7 txt-theme" for="btnradio1"
+                  >Met</label
+                >
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="btnradio"
+                  id="btnradio2"
+                  autocomplete="off"
+                />
+                <label class="btn btn-radio8 txt-theme" for="btnradio2"
+                  >Unmet</label
+                >
+              </div>
+            </li>
+            <li class="txt-theme">
+              <span class="txt-theme">
+                Institutionalize regular screening and monitoring protocols for
+                diabetes-related complications.</span
+              ><br />
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Basic radio toggle button group"
+              >
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="btnradio"
+                  id="btnradio1"
+                  autocomplete="off"
+                />
+                <label class="btn btn-radio9 txt-theme" for="btnradio1"
+                  >Met</label
+                >
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="btnradio"
+                  id="btnradio2"
+                  autocomplete="off"
+                />
+                <label class="btn btn-radio10 txt-theme" for="btnradio2"
+                  >Unmet</label
+                >
+              </div>
+            </li>
+            <li class="txt-theme">
+              <span class="txt-theme">
+                Integrate diabetes education programs as a standard part of
+                patient care, with continuous improvement based on feedback and
+                outcomes</span
+              ><br />
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Basic radio toggle button group"
+              >
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="btnradio"
+                  id="btnradio1"
+                  autocomplete="off"
+                />
+                <label class="btn btn-radio11 txt-theme" for="btnradio1"
+                  >Met</label
+                >
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="btnradio"
+                  id="btnradio2"
+                  autocomplete="off"
+                />
+                <label class="btn btn-radio12 txt-theme" for="btnradio2"
+                  >Unmet</label
+                >
+              </div>
+            </li>
+          </ol>
+        </section>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../assets/JS/darkmode-other.js"></script>
+    <script src="../assets/JS/evaluation.js"></script>
+  </body>
+</html>
