@@ -7,13 +7,15 @@ function checkAppointmentTime() {
   var storedAppointmentDate = localStorage.getItem("appointment-date");
   var storedAppointmentTime = localStorage.getItem("appointment-time");
 
-  alert(
-    "Reminder: Your follow-up appointment for diabetes management is scheduled for " +
-      storedAppointmentDate +
-      " at " +
-      storedAppointmentTime +
-      ". Please ensure you attend as scheduled."
-  );
+  if (storedAppointmentDate && storedAppointmentTime) {
+    alert(
+      "Reminder: Your follow-up appointment for diabetes management is scheduled for " +
+        storedAppointmentDate +
+        " at " +
+        storedAppointmentTime +
+        ". Please ensure you attend as scheduled."
+    );
+  }
 }
 
 // Add event listener to execute the checkAppointmentTime function on page load
