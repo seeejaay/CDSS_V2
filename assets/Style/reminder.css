@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 300ms ease;
+  font-family: "Poppins", sans-serif;
+  --ivory: #f8f9fa;
+  --dark: #212529;
+  --yellow: #e29d35;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--ivory);
+  padding: 3.75rem 0 3.75rem 0;
+
+  h1 {
+    padding: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    width: 100%;
+  }
+}
+
+.reminder {
+  width: 100%;
+  padding: 20px;
+}
+
+.appointment,
+.glucose,
+.lifestyle {
+  padding: 20px;
+  border-top: 2px solid #9c9c9c;
+  .form-group {
+    width: 100%;
+    display: flex;
+    max-width: 900px;
+    gap: 40px;
+  }
+}
+.glucose,
+.lifestyle {
+  width: 100%;
+  .form-group {
+    max-width: 430px;
+  }
+}
+.date,
+.time {
+  width: 100%;
+
+  label {
+    padding: 10px 5px 10px 5px;
+    font-size: 18px;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}

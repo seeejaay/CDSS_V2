@@ -20,6 +20,13 @@ const openEval = document.getElementById("_evaluation");
 openEval.addEventListener("click", () => {
   window.open("./Pages/evaluation.html", "_self");
 });
+
+const openRem = document.getElementById("_reminder");
+
+openRem.addEventListener("click", () => {
+  window.open("./Pages/reminder.html", "_self");
+});
+
 const submitBtn = document.getElementById("submit");
 const editBtn = document.getElementById("edit");
 submitBtn.addEventListener("click", function (event) {

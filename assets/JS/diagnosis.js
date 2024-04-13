@@ -21,6 +21,12 @@ openEval.addEventListener("click", () => {
   window.open("./evaluation.html", "_self");
 });
 
+const openRem = document.getElementById("_reminder");
+
+openRem.addEventListener("click", () => {
+  window.open("./reminder.html", "_self");
+});
+
 var storedAnswers = localStorage.getItem("answers");
 storedAnswers = JSON.parse(storedAnswers);
 var keys;

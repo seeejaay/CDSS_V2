@@ -22,6 +22,12 @@ openPlan.addEventListener("click", () => {
   window.open("./planning.html", "_self");
 });
 
+const openRem = document.getElementById("_reminder");
+
+openRem.addEventListener("click", () => {
+  window.open("./reminder.html", "_self");
+});
+
 const btnRadio1 = document.querySelector(".btn-radio1");
 const btnRadio2 = document.querySelector(".btn-radio2");
 btnRadio1.addEventListener("click", () => {

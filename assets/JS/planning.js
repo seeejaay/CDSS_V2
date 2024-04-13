@@ -22,6 +22,12 @@ openEval.addEventListener("click", () => {
   window.open("./evaluation.html", "_self");
 });
 
+const openRem = document.getElementById("_reminder");
+
+openRem.addEventListener("click", () => {
+  window.open("./reminder.html", "_self");
+});
+
 const label1 = document.getElementById("_label1");
 const plan1 = document.getElementById("_plan1");
 

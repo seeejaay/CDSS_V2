@@ -21,6 +21,12 @@ openEval.addEventListener("click", () => {
   window.open("./evaluation.html", "_self");
 });
 
+const openRem = document.getElementById("_reminder");
+
+openRem.addEventListener("click", () => {
+  window.open("./reminder.html", "_self");
+});
+
 // Select the form and the edit button
 const form = document.querySelector("form");
 const editButton = document.querySelector("#_edit");
