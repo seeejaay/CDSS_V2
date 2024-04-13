@@ -64,9 +64,11 @@ function checkLifestyleTime() {
     "Dietary Reminder: Make mindful food choices today to support your diabetes management. Remember to include plenty of vegetables and whole grains.",
   ];
 
-  var randomIndex = Math.random();
-  randomIndex = Math.floor(Math.random() * 2);
-  alert(messageLifestyle[randomIndex]);
+  if (lifestyle) {
+    var randomIndex = Math.random();
+    randomIndex = Math.floor(Math.random() * 2);
+    alert(messageLifestyle[randomIndex]);
+  }
 }
 
 window.addEventListener("load", () => {
