@@ -17,3 +17,22 @@ function saveAppointment() {
   localStorage.setItem("appointment-date", appointmentDate);
   localStorage.setItem("appointment-time", appointmentTime);
 }
+
+var glucoseTimeElement = document.getElementById("glucose-time");
+
+glucoseTimeElement.addEventListener("input", saveGlucoseTime);
+
+function saveGlucoseTime() {
+  var glucoseTime = glucoseTimeElement.value;
+  localStorage.setItem("glucose-time", glucoseTime);
+}
+
+var lifesyleTimeElement = document.getElementById("lifestyle-time");
+
+lifesyleTimeElement.addEventListener("input", saveLifestyleTime);
+
+function saveLifestyleTime() {
+  var lifestyleTime = lifesyleTimeElement.value;
+  console.log(lifestyleTime);
+  localStorage.setItem("lifestyle-time", lifestyleTime);
+}

@@ -19,7 +19,6 @@ function checkAppointmentTime() {
 }
 
 // Add event listener to execute the checkAppointmentTime function on page load
-window.addEventListener("load", checkAppointmentTime);
 
 // Function to check the glucose time
 function checkGlucoseTime() {
@@ -39,7 +38,7 @@ function checkGlucoseTime() {
   if (glucoseTime.getTime() === currentTime.getTime()) {
     console.log("FIRE");
     alert(
-      "Your glucose level is high. Please take your medication and consult your doctor."
+      "Daily Blood Sugar Check Reminder; It's time to test your blood sugar. Regular monitoring helps you stay on track with your diabetes management."
     );
   } else {
     console.log("NO FIRE");
@@ -52,4 +51,25 @@ setInterval(() => {
 }, 60000);
 
 // Add event listener to execute the checkAppointmentTime function on page load
-window.addEventListener("load", checkAppointmentTime);
+
+function checkLifestyleTime() {
+  // Ignore seconds and milliseconds
+
+  var lifestyle = localStorage.getItem("lifestyle-time");
+  console.log(lifestyle);
+  var messageLifestyle = [
+    "Healthy Habits Reminder: Incorporate physical activity into your day to help manage your diabetes. Aim for at least" +
+      lifestyle +
+      " minutes of exercise today",
+    "Dietary Reminder: Make mindful food choices today to support your diabetes management. Remember to include plenty of vegetables and whole grains.",
+  ];
+
+  var randomIndex = Math.random();
+  randomIndex = Math.floor(Math.random() * 2);
+  alert(messageLifestyle[randomIndex]);
+}
+
+window.addEventListener("load", () => {
+  checkAppointmentTime();
+  checkLifestyleTime();
+});
