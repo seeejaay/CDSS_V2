@@ -27,13 +27,17 @@
 
 .reminder {
   width: 100%;
-  padding: 20px;
+  padding: 20px 10px 20px 10px;
 }
 
 .appointment,
 .glucose,
 .lifestyle {
-  padding: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
   border-top: 2px solid #9c9c9c;
   .form-group {
     width: 100%;
