@@ -70,8 +70,7 @@ function checkLifestyleTime() {
     alert(messageLifestyle[randomIndex]);
   }
 }
-
-window.addEventListener("load", () => {
+setTimeout(() => {
   checkAppointmentTime();
   checkLifestyleTime();
-});
+}, 1000);

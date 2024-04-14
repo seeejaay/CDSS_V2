@@ -1,7 +1,7 @@
 const openPat = document.getElementById("_patientData");
 
 openPat.addEventListener("click", () => {
-  window.open("../index.html", "_self");
+  window.open("./patientdata.html", "_self");
 });
 
 const openDiag = document.getElementById("_diagnosis");
